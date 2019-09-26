@@ -1,0 +1,66 @@
+theme = "docuapi"
+languageCode = "en-us"
+baseurl = "https://academy.codesolz.net/web-development-tutorial/php-mysql-tutorial/"
+title = "PHP MySql tutorial for beginners"
+
+
+disableKinds = ["taxonomyTerm"]
+
+# Code higlighting settings
+pygmentsCodefences = true
+pygmentsCodeFencesGuesSsyntax = false
+pygmentsOptions = ""
+pygmentsStyle = "monokai"
+pygmentsUseClasses = false
+
+defaultContentLanguage = "en"
+
+[module]
+[module.hugoVersion]
+[[module.imports]]
+# We include the theme by "../.." above, but we need one module import for Hugo to detect us as a Hugo Module.
+path="github.com/bep/empty-hugo-module"
+
+[params]
+search = true
+  
+# Configure the language example tabs.
+[[params.language_tabs]]
+key = "php"
+name = "Coding Example" 
+
+
+
+#Languages 
+[languages]
+
+[languages.en]
+languageName = "English"
+weight = 2
+title = "PHP MySql tutorial for beginners"
+
+# Left sidebar footer items. Use HTMl or Markdown.
+toc_footers = [ 
+"<a href='https://codesolz.net'>Sign Up Online Courses</a>",
+"Copyright @ [M.Tuhin](https://github.com/tuhin18003)"
+]
+[languages.en.blackfriday]
+angledQuotes = false
+hrefTargetBlank = true
+
+
+[languages.bn]
+languageName = "Bengali"
+weight = 1
+title = "PHP MySql tutorial for beginners in bangla"
+
+# Left sidebar footer items. Use HTMl or Markdown.
+toc_footers = [ 
+"<a href='https://codesolz.net'>Sign Up Online Courses</a>",
+"Copyright @ [M.Tuhin](https://github.com/tuhin18003)"
+]
+
+[languages.nn.blackfriday]
+# Norwegian uses angled quotes
+angledQuotes = true
+hrefTargetBlank = true
